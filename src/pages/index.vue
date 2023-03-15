@@ -1,11 +1,5 @@
-<script setup>
-const story = await useAsyncStoryblok("home", { version: "draft" });
-</script>
 <template>
   <main>
-    <template>
-      <StoryblokComponent v-if="story" :blok="story.content" />
-    </template>
     <div class="banner">
       <div class="banner__text">
         <ul class="banner__text__titles">
