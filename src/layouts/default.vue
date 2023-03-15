@@ -10,5 +10,6 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
+  gap: 32px;
 }
 </style>

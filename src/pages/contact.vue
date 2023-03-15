@@ -15,7 +15,7 @@
         <label class="" for="nom">
           <input
             type="text"
-            class="ontact__form__nom"
+            class="contact__form__nom"
             id="nom"
             placeholder="Votre nom"
             name="nom"
@@ -51,18 +51,19 @@
         </label>
       </div>
       <div class="contact__info">
-        <p>730 Route de St Julien, 74520 Valleiry</p>
-        <p>Tél : 06 13 10 17 45</p>
-      </div>
-      <div class="contact__map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1383.0594176180614!2d5.976280658327958!3d46.1085389947785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDbCsDA2JzMwLjciTiA1wrA1OCczOC42IkU!5e0!3m2!1sfr!2sfr!4v1609347627391!5m2!1sfr!2sfr"
-          frameborder="0"
-          style="border: 0"
-          allowfullscreen=""
-          aria-hidden="false"
-          tabindex="0"
-        ></iframe>
+        <div class="contact__info__coordonnees">
+          <p>730 Route de St Julien, 74520 Valleiry</p>
+          <p>Tél : 06 13 10 17 45</p>
+        </div>
+        <div class="contact__info__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1383.0594176180614!2d5.976280658327958!3d46.1085389947785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDbCsDA2JzMwLjciTiA1wrA1OCczOC42IkU!5e0!3m2!1sfr!2sfr!4v1609347627391!5m2!1sfr!2sfr"
+            frameborder="0"
+            style="border: 0"
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
       </div>
     </div>
   </main>
@@ -73,10 +74,21 @@
   font-size: 14px;
 
   &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   &__prenom {
-    border-radius: 50px;
   }
 
   &__nom {
@@ -90,11 +102,10 @@
   &__prestation {
   }
 
-  &__info {
+  &__coordonnees {
   }
 
   &__map {
-    width: 50%;
   }
 }
 </style>

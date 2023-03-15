@@ -25,14 +25,12 @@
   justify-content: space-between;
   width: 100%;
   align-items: center;
-
+  padding: 2rem;
   &__logo {
     width: 150px;
-    margin: 1em;
   }
 
   &__nav {
-    margin: 3rem;
     display: flex;
     gap: 1.5rem;
     font-size: medium;

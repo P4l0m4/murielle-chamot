@@ -15,12 +15,21 @@
     </div>
     <div class="cards">
       <div class="cards__card">
-        <div class="cards__card__1">
+        <div class="cards__card__text img1">
           <h5>
             ENCADREMENT ARTISANAL <br />
             ARTISAN D'ART
           </h5>
+          <p>Je vous propose :</p>
+          <ul>
+            <li>Mes créations sur mesure</li>
+            <li>Mise en valeur et personnalisation</li>
+            <li>Montage des sujets</li>
+            <li>Conservation</li>
+            <li>Protection</li>
+          </ul>
         </div>
+
         <nuxt-link class="cards__card__link button" to="/"
           >En savoir plus</nuxt-link
         >
@@ -49,7 +58,7 @@
 
 <style lang="scss" scoped>
 .banner {
-  background-image: url(@/assets/banner.jpg);
+  background-image: url("@/assets/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: contain;
@@ -59,22 +68,26 @@
   align-items: center;
 
   &__text {
-    padding-left: 3rem;
     background-color: rgba($primary-color, $alpha: 0.8);
     backdrop-filter: blur(10px);
     width: 30%;
     height: 100%;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    gap: 1.5rem;
+    padding-left: 4rem;
+    justify-content: center;
     &__titles {
       &__title {
         font-family: $headings-font;
-        font-size: 3rem;
-        line-height: 3.6rem;
+        font-size: 3.5rem;
         font-weight: bold;
         list-style: none;
       }
+    }
+
+    &__link {
+      width: 200px;
     }
   }
 }
@@ -90,18 +103,33 @@
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
-    &__1 {
-      background-image: url(@/assets/valentine1.png);
-    }
-    &__img {
-      width: 100%;
-      border-radius: 10px;
-    }
 
-    &__link {
-      width: 100%;
-      margin: auto;
+    &__text {
+      width: 399px;
+      height: 399px;
+      border-radius: 10px;
+      h5 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+      // p ul {
+      //   text-align: left;
+      // }
     }
   }
+
+  &__img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  &__link {
+    width: 100%;
+    margin: auto;
+  }
+}
+.img1 {
+  background-image: url(@/assets/valentine1.png);
 }
 </style>
