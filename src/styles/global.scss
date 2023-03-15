@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@200;300;400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+body {
+  background-color: rgb(10, 10, 10);
+  font-family: "Montserrat", sans-serif;
+}
+
+.button {
+  padding: 1rem 0;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid $tertiary-color;
+  border-radius: 10px;
+  transition: transform 0.4s ease-in-out, background-color 0.4s ease-in-out;
+}
+
+.button:hover {
+  transform: translateY(-5px);
+  background-color: $tertiary-color;
+}
