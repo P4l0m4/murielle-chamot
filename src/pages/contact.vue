@@ -2,34 +2,49 @@
   <main>
     <div class="contact">
       <div class="contact__form">
-        <label class="contact__form__prenom" for="prenom">
+        <label class="" for="prenom">
           <input
+            class="contact__form__prenom"
             type="text"
-            class=""
+            id="prenom"
             placeholder="Votre prénom"
             name="prenom"
           />
         </label>
 
-        <label class="contact__form__nom" for="nom">
-          <input type="text" class="" placeholder="Votre nom" name="nom" />
-        </label>
-        <label class="contact__form__telephone" for="telephone">
+        <label class="" for="nom">
           <input
             type="text"
-            class=""
+            class="ontact__form__nom"
+            id="nom"
+            placeholder="Votre nom"
+            name="nom"
+          />
+        </label>
+        <label class="" for="telephone">
+          <input
+            class="contact__form__telephone"
+            type="text"
+            id="telephone"
             placeholder="Votre numéro de téléphone"
             name="telephone"
           />
         </label>
 
-        <label class="contact__form__email" for="email">
-          <input type="email" class="" placeholder="Votre email" name="mail" />
+        <label class="" for="email">
+          <input
+            class="contact__form__email"
+            type="email"
+            id="email"
+            placeholder="Votre email"
+            name="mail"
+          />
         </label>
 
-        <label class="contact__form__message" for="message">
+        <label class="" for="message">
           <textarea
-            class=""
+            class="contact__form__message"
+            id="message"
             placeholder="Votre message"
             name="message"
           ></textarea>
@@ -55,13 +70,13 @@
 
 <style lang="scss" scoped>
 .contact {
-  align-items: center;
   font-size: 14px;
 
   &__form {
   }
 
   &__prenom {
+    border-radius: 50px;
   }
 
   &__nom {
@@ -79,6 +94,7 @@
   }
 
   &__map {
+    width: 50%;
   }
 }
 </style>

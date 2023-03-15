@@ -2,26 +2,25 @@
   <main>
     <div class="banner">
       <div class="banner__text">
-        <ul class="banner__leftcontent__titles">
-          <li class="banner__leftcontent__titles__title">Vitrerie</li>
-          <li class="banner__leftcontent__titles__title">Miroiterie</li>
-          <li class="banner__leftcontent__titles__title">Encadrement</li>
-          <li class="banner__leftcontent__titles__title">Artisanal</li>
+        <ul class="banner__text__titles">
+          <li class="banner__text__titles__title">Vitrerie</li>
+          <li class="banner__text__titles__title">Miroiterie</li>
+          <li class="banner__text__titles__title">Encadrement</li>
+          <li class="banner__text__titles__title">Artisanal</li>
         </ul>
-        <nuxt-link class="banner__leftcontent__link button" to="/"
+        <nuxt-link class="banner__text__link button" to="/"
           >Plus d'infos</nuxt-link
         >
       </div>
     </div>
     <div class="cards">
       <div class="cards__card">
-        <figure>
-          <img class="cards__card__img" src="@/assets/valentine1.png" />
+        <div class="cards__card__1">
           <h5>
             ENCADREMENT ARTISANAL <br />
             ARTISAN D'ART
           </h5>
-        </figure>
+        </div>
         <nuxt-link class="cards__card__link button" to="/"
           >En savoir plus</nuxt-link
         >
@@ -50,16 +49,25 @@
 
 <style lang="scss" scoped>
 .banner {
+  background-image: url(@/assets/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
   width: 100%;
+  height: 423px;
   display: flex;
-  padding: 1rem;
+  align-items: center;
 
-  &__leftcontent {
-    width: 50%;
+  &__text {
     padding-left: 3rem;
+    background-color: rgba($primary-color, $alpha: 0.8);
+    backdrop-filter: blur(10px);
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     &__titles {
-      padding-bottom: 1rem;
-
       &__title {
         font-family: $headings-font;
         font-size: 3rem;
@@ -67,14 +75,6 @@
         font-weight: bold;
         list-style: none;
       }
-    }
-  }
-
-  &__rightcontent {
-    margin: auto;
-    width: 70%;
-    height: 100%;
-    &__img {
     }
   }
 }
@@ -90,7 +90,9 @@
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
-
+    &__1 {
+      background-image: url(@/assets/valentine1.png);
+    }
     &__img {
       width: 100%;
       border-radius: 10px;
