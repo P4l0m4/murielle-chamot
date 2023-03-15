@@ -13,4 +13,8 @@ export default defineNuxtConfig({
       },
     },
   },
+  modules: [
+    "nuxt-calendly",
+    ["@storyblok/nuxt", { accessToken: "p4gGIMh6R6U5xPOUYs5oCgtt" }],
+  ],
 });

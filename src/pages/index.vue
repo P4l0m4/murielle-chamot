@@ -108,14 +108,21 @@
       width: 399px;
       height: 399px;
       border-radius: 10px;
+      padding: 1rem;
       h5 {
         text-align: center;
         font-weight: bold;
         font-size: 1.2rem;
+        padding: 1rem 0;
       }
-      // p ul {
-      //   text-align: left;
-      // }
+      p ul {
+        line-height: 1em;
+        text-align: left;
+        font-size: 0.9rem;
+      }
+      ul {
+        padding: 1rem;
+      }
     }
   }
 
