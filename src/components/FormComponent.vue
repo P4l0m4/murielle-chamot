@@ -237,7 +237,7 @@ async function submit() {
 <style lang="scss" scoped>
 .form {
   width: clamp(240px, 100%, 384px);
-  // background-color: $base-color;
+  background-color: $base-color;
   background-color: rgba(255, 255, 255, 0.04);
   border: rgba(255, 255, 255, 0.06) solid 1px;
   padding: 16px;
